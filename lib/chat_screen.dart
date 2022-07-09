@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kakao_chat/chat_main_screen.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({Key? key}) : super(key: key);
@@ -22,7 +23,8 @@ class ChatScreen extends StatelessWidget {
           Row(
             children: [
               IconButton(onPressed: () {}, icon: const Icon(Icons.search)),
-              IconButton(onPressed: () {}, icon: Icon(Icons.chat)),
+              IconButton(
+                  onPressed: () {}, icon: Icon(Icons.chat_bubble_outline)),
               IconButton(
                   onPressed: () {}, icon: Icon(Icons.music_note_rounded)),
               IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
@@ -30,10 +32,12 @@ class ChatScreen extends StatelessWidget {
           )
         ],
       ),
-      body: Container(),
+      body: const ChatMainScreen(),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.black,
+        unselectedItemColor: Colors.white,
+        selectedItemColor: Colors.white,
         items: const [
           BottomNavigationBarItem(
               icon: Icon(Icons.person_outline_outlined, color: Colors.white),
