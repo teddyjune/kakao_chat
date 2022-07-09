@@ -24,15 +24,15 @@ class ChatScreen extends StatelessWidget {
             children: [
               IconButton(onPressed: () {}, icon: const Icon(Icons.search)),
               IconButton(
-                  onPressed: () {}, icon: Icon(Icons.chat_bubble_outline)),
+                  onPressed: () {}, icon: const Icon(Icons.chat_bubble_outline)),
               IconButton(
-                  onPressed: () {}, icon: Icon(Icons.music_note_rounded)),
-              IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
+                  onPressed: () {}, icon: const Icon(Icons.music_note_rounded)),
+              IconButton(onPressed: () {}, icon: const Icon(Icons.settings)),
             ],
           )
         ],
       ),
-      body: const ChatMainScreen(),
+      body: ChatMainScreen(),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.black,
