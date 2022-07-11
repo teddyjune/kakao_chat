@@ -30,28 +30,28 @@ class ChatList extends StatelessWidget {
               children: [
                 Text(
                   chatName,
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
                 ),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 Text(
                   chatNum,
-                  style: TextStyle(color: Colors.grey),
+                  style: const TextStyle(color: Colors.grey),
                 ),
-                SizedBox(width: 8),
-                Icon(Icons.notifications_off),
+                const SizedBox(width: 8),
+                const Icon(Icons.notifications_off),
               ],
             ),
             Text(
               recentMessage,
-              style: TextStyle(fontSize: 10),
+              style: const TextStyle(fontSize: 10, color: Colors.grey),
             ),
           ],
         ),
-        Spacer(),
+        const Spacer(),
         Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            Text(lastChatTime, style: TextStyle(color: Colors.grey)),
+            Text(lastChatTime, style: const TextStyle(color: Colors.grey)),
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
@@ -61,7 +61,7 @@ class ChatList extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(5, 0, 5, 0),
                 child: Text(
                   newChatNum,
-                  style: TextStyle(color: Colors.white),
+                  style: const TextStyle(color: Colors.white),
                 ),
               ),
             )
